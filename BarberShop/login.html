@@ -8,19 +8,20 @@
 
     <link rel="stylesheet" href="css/login.css">
     <link rel="icon" href="img/favicon.png"><!--favicon Link-->
+    <script src="js/login.js"></script>
 </head>
 
 <body>
     <div class="conteudo">
         <div class="texto">Login</div>
 
-        <form action="#" class="form-data">
+        <form action="#" class="form-data" id="login-form">
             <div class="linhas">
-                <input type="email">
+                <input type="email" id="login-email">
                 <label>Insira o seu e-mail</label>
             </div>
             <div class="linhas">
-                <input type="password">
+                <input type="password" id="login-password">
                 <label>Insira a sua senha</label>
             </div>
             <div class="lembrar">
@@ -34,9 +35,9 @@
             </div>
 
             <div class="botao">
-                <button id="btn">iniciar sessão</button>
+                <button id="btn" onclick="entrar()">iniciar sessão</button>
             </div>
-            <div class="link">Ainda não possui uma <a href="">conta</a></div>
+            <div class="link">Ainda não possui uma <a href="cadastro.html">conta</a></div>
         </form>
     </div>
 </body>
