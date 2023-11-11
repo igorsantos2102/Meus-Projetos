@@ -1,87 +1,111 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Igor Santos" />
+    <title>Cadastro</title>
 
     <link rel="stylesheet" href="css/cadastro.css" />
-
-    <title>Cadastro</title>
   </head>
   <body>
-    <div class="principal">
-      <div class="img">aqui</div>
+    <div class="container">
 
-        <h1>Cadastre-se</h1>
+      <!-- imagem cadastro -->
+      <div class="img">
+        <img src="img/logo-cadastro03.png" alt="logo-cadastro" />
+      </div><!--img-->
 
-      <fieldset>
-        <form method="post" id="signup-form">
-          <!-- nome-usuario -->
-          <div class="nomes">
-            <label>Primeiro Nome</label>
-            <input type="text" placeholder="Digite seu primeiro nome" />
-          </div>
+      <!-- formulario cadastro -->
+      <div class="form">
 
-          <!-- sobrenome-usuario -->
-          <div class="nomes">
-            <label>Sobrenome</label>
-            <input type="text" placeholder="Digite seu sobrenome" />
-          </div>
+        <form action="#" method="post" id="signup-form">
 
-          <!-- E-mail -->
-          <div class="nomes">
-            <label>E-mail</label>
-            <input
-              type="email"
-              id="signup-email"
-              placeholder="Digite seu E-mail"
-              maxlength="50"
-            />
-          </div>
+          <!-- titulo cadastro -->
+          <div class="form-header">
+            <div class="title">
+              <h1>Cadastre-se</h1>
+            </div>
+          </div><!--form-header-->
 
-          <!-- celular -->
-          <!-- realizar tratamento para receber somente numeros -->
-          <div class="nomes">
-            <label>Celular</label>
-            <input type="tel" id="signup-fone" placeholder="(xx) xxxxx-xxxx" />
-          </div>
+          <!-- inputs cadastro -->
+          <div class="input-group">
 
-          <!-- senha-->
-          <div class="nomes">
-            <label for="senha">Senha</label>
-            <input
-              type="password"
-              id="signup-password"
-              placeholder="Digite sua senha"
-              minlength=""
-            /><br />
-          </div>
+            <!-- nome -->
+            <div class="input-box">
+              <label for="primeiro-nome">Primeiro nome</label>
+              <input id="primeiro-nome" type="text" name="primeiro-nome" placeholder="Digite seu primeiro nome" required>
+            </div>
 
-          <!-- confirmacao-senha-->
-          <div class="nomes">
-            <label>Confirme a Senha</label>
-            <input
-              type="password"
-              id="signup-confirm-password"
-              placeholder="Digite sua senha novamente"
-              minlength=""
-            /><br />
-          </div>
+            <!-- sobrenome -->
+            <div class="input-box">
+              <label for="sobrenome">Sobrenome</label>
+              <input id="sobrenome" type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
+            </div>
+
+            <!-- email -->
+            <div class="input-box">
+              <label for="email">E-mail</label>
+              <input type="email" id="signup-email" placeholder="Digite seu E-mail" maxlength="50" required>
+            </div>
+
+
+            <!-- celular -->
+            <div class="input-box">
+              <label for="celular">Celular</label>
+              <input id="celular" type="tel" name="sobrenome" placeholder="(xx) xxxxx-xxxx" required>
+            </div>
+
+
+            <!-- senha -->
+            <div class="input-box">
+              <label for="senha">Senha</label>
+              <input type="password" id="signup-password" placeholder="Digite sua senha" minlength="6" required>
+            </div>
+
+            <!-- confirme senha -->
+            <div class="input-box">
+              <label for="confirm-senha">Confirme a Senha</label>
+              <input type="password" id="signup-confirm-password" placeholder="Confirme sua senha" minlength="6" required>
+            </div>
+
+          </div><!--input-group-->
 
           <!-- genero -->
+          <div class="genero">
+            <div class="title-genero">
+              <h6>Gênero</h6>
+            </div><!--title-genero-->
+            
+              <div class="genero-group">
 
-          <label>Gênero</label>
-          <div id="genero">
-              <label for=""> <input type="radio" name="genero" />Feminino </label>
-              <label for=""><input type="radio" name="genero" />Masculino</label>
-              <label for=""><input type="radio" name="genero" />Outros</label>
-          </div><br />
-          <button type="button" onclick="cadastrar()">Continuar</button>
+                <div class="genero-input">
+                  <input type="radio" name="genero" id="feminino">
+                  <label for="feminino">Feminino</label>
+                </div>
+
+                <div class="genero-input">
+                  <input type="radio" name="genero" id="masculino">
+                  <label for="masculino">Masculino</label>
+                </div>
+
+                <div class="genero-input">
+                  <input type="radio" name="genero" id="outros">
+                  <label for="outros">Outros</label>
+                </div>
+
+
+            </div><!--genero-group-->
+          </div><!--genero-->
+
+          <div class="btn-continue">
+            <button type="button" onclick="cadastrar()">Continuar</button>
+          </div>
+
         </form>
-      </fieldset>
-      <!--form-->
-    </div>
-    <!--principal-->
+
+      </div><!--form-->
+
+
+    </div><!--container-->
   </body>
 </html>
