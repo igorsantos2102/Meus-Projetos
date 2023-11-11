@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Igor Santos">
+    <title>Barber Shop</title>
+
+    <link rel="icon" href="img/favicon.png" />
+    <!--favicon Link-->
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/slide.css" />
+
+    <script src="js/slide.js" defer></script>
+  </head>
+
+  <body>
+    <!--cabeçalho da página-->
+    <header id="header">
+      <div class="container">
+        <div class="flex">
+          <a href="index.html"
+            ><img class="logoNav" src="img/logoServicos.png" alt="Barbearia"
+          /></a>
+
+          <nav>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="#servicos">NOSSOS SERVIÇOS</a></li>
+              <li><a href="#sobre">SOBRE</a></li>
+            </ul>
+          </nav>
+
+          <div class="btn-contato">
+            <a href="#"><button>CONTATO</button></a>
+          </div>
+        </div>
+        <!--flex-->
+      </div>
+      <!--container-->
+    </header>
+
+    <!--slides-->
+    <section class="slider">
+      <div class="slider-content">
+        <input type="radio" name="btn-radio" id="radio1" />
+        <input type="radio" name="btn-radio" id="radio2" />
+        <input type="radio" name="btn-radio" id="radio3" />
+
+        <div class="slide-box primeiro">
+          <img src="img/slide_01.png" alt="slide 1" />
+        </div>
+
+        <div class="slide-box">
+          <img src="img/slide_02.png" alt="slide 2" />
+        </div>
+
+        <div class="slide-box">
+          <img src="img/slide_03.png" alt="slide 3" />
+        </div>
+        <!--nav. automatica slide-->
+        <div class="nav-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+        <!--nav. manual slide "FORA DE TELA"-->
+        <div class="nav-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+      </div>
+      <!--slider-content-->
+    </section>
+
+    <script src="js/menu.js"></script>
+
+    <!--Lista de Preços-->
+    <span id="servicos"></span>
+    <main class="main">
+      <div class="container-main">
+        <div class="line">
+          <div class="text">
+            <h2>Nossos Serviços</h2>
+          </div>
+          <ul>
+            <li>Corte <span>R$25</span></li>
+            <hr />
+            <li>Barba <span>R$50</span></li>
+            <hr />
+            <li>Acabamento <span>R$40</span></li>
+            <hr />
+            <li>Escova <span>R$50</span></li>
+            <hr />
+            <li>Camuflagem <span>R$70</span></li>
+            <hr />
+            <li>Selagem <span>R$40</span></li>
+            <hr />
+            <li>Relaxamento <span>R$50</span></li>
+            <hr />
+            <li>Tintura <span>R$30</span></li>
+            <hr />
+            <li>Platinado <span>R$60</span></li>
+            <hr />
+            <li>Sobrancelha pinça <span>R$15</span></li>
+            <hr />
+            <li>Sobrancelha navalha <span>R$20</span></li>
+          </ul>
+        </div>
+        <!--line-->
+      </div>
+      <!--container-main-->
+
+      <!--text sobre-->
+      <div class="container-sobre">
+        <div class="text-sobre">
+          <h1 id="sobre">Sobre</h1>
+          <p>
+            Com uma pegada mais contemporânea e misturando elementos da cultura
+            pop, a nossa barbearia vai na contramão do tradicional estilo das
+            barbearias e aposta na originalidade.<br /><br />
+            Localizada em um dos bairros mais conhecidos e badalados de Belo
+            Horizonte, também está presente em uma das principais avenidas de
+            Nova Lima.<br /><br />
+            Desde 2023, buscando pelo bem estar de todos os clientes através dos
+            serviços de qualidade e os melhores profissionais<br /><br />
+          </p>
+        </div>
+      </div>
+      <!--container-sobre-->
+      <!--image-->
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom, #5f5a48, #666357); 
+}
+
+/*header*/
+
+.container img {
+  max-width: 120px;
+  max-height: 70px;
+  width: auto;
+  height: auto;
+}
+
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  padding: 50px 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+header.rolagem {
+  background-color: rgb(37, 35, 35);
+  padding: 15px 4%;
+}
+
+header.rolagem a {
+  color: #ebc428;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-style: bold;
+}
+
+.btn-contato button {
+  width: 120px;
+  height: 40px;
+  border: 0;
+  background-color: #ffde59;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/*main*/
+
+.main {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-bottom: 80px;
+  color: white;
+  background-color: white;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 1px 1px 3px 1px rgba(105, 105, 105, 0.247);
+  background-image: linear-gradient(to bottom, #332F21, #332f21ad);
+}
+
+.container-main {
+  width: 800px;
+  height: 200px;
+  padding: 50px;
+  margin: auto;
+  font-size: 2em;
+  color: white;
+  transition: 1s;
+}
+
+.container-main ul {
+  list-style-type: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.line {
+  background-image: url(../img/logoServicos.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 2px solid #815d15;
+  border-radius: 5px;
+  box-shadow: 0.5px 1.5px 5px 1px #332f21b9;
+}
+
+.line:hover {
+  backdrop-filter: blur(10px);
+}
+
+.line ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 15px;
+  text-align: justify;
+}
+
+.text h2 {
+  text-align: center;
+}
+
+.container-sobre {
+  width: 100%;
+  max-width: 800px;
+  background-color: #332f217a;
+  padding: 10px;  
+  margin: auto;
+  margin-top: 70%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid #815d15;
+  box-shadow: 1px .5px 5px 2px #332f2152;
+  overflow: hidden;
+}
+
+#sobre{
+  padding: 5px 0px 20px 10px;
+}
+
+.text-sobre {
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-size: 1.1em;
+    text-align: justify;
+    padding: 5px;
+}
+
+
+/*
+footer*/
+
+footer{
+  width: auto;
+  height: 100px;
+  background-color: aqua;
+}

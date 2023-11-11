@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* background: url(../img/logoLogin02.png); */
+    /* background-size: cover; */
+    background-image: linear-gradient(to top, #080401, #522D09, #5F3308);
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background: rgba(0,0,0,.3);
+
+
+}
+
+.conteudo {
+    width: 400px;
+    z-index: 1;
+    padding: 20px 30px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 32px;
+}
+
+.conteudo .texto {
+    color: #ccc;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.conteudo .form-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo .form-data .linhas{
+    margin: 20px 0;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+.conteudo .form-data .linhas label{
+    color: #ccc;
+    font-size: 16px;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    transition: 0.30s;
+    transform: translateY(-150%);
+}
+/*tamanho do label*/
+.conteudo .form-data .linhas input{
+    width: 100%;
+    height: 20px;
+    border: none;
+    color: #ccc;
+    font-size: 16px;
+    background: transparent;
+}
+/*altura do label*/
+.conteudo .form-data .linhas input:focus~label {
+    top: 5px;
+    font-size: 14px;
+    transform: translateY(-130%);
+}
+
+.conteudo .lembrar {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.conteudo .lembrar .divs {
+    display: flex;
+    align-items: center;
+}
+
+.conteudo .lembrar label{
+    color: #ccc;
+    margin-right: 3px;
+}
+
+.conteudo .lembrar input{
+    accent-color: #ccc;
+}
+
+.conteudo .lembrar .divs a,
+.conteudo .link a {
+    color: dodgerblue;
+    transition: all .3s ease;
+}
+
+.conteudo .lembrar .divs a:hover,
+.conteudo .link a:hover {
+    text-decoration: underline;
+}
+
+.conteudo .botao {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo .botao button {
+    border: none;
+    color: #ccc;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 7px 10px;
+    background: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.conteudo .botao button:hover {
+    background: #313131ff;
+}
+
+.conteudo .link {
+    color: #ccc;
+}
