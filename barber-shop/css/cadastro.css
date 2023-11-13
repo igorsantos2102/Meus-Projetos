@@ -138,12 +138,6 @@ body{
 }
 
 @media screen and (max-width: 1350px){
-    body{
-        background-image: url(../img/logo-cadastro03.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
     .container{
         width:auto;
         height: auto;
