@@ -1,2 +1,2 @@
 # Projetos
- Projetos feitos por mim
+ Projetos feitos para praticar Html, Css e JavaScript
