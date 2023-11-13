@@ -63,14 +63,13 @@ body{
     display: flex;
     flex-wrap:wrap ;
     justify-content: space-between;
-    padding: 1rem;
+    padding: auto;
 }
 
 .input-box{
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.1rem;
-
+    margin-bottom: auto;
 }
 
 .input-box input{
@@ -136,4 +135,43 @@ body{
 
 .btn-continue button:hover{
     background-color: #47474736;
+}
+
+@media screen and (max-width: 900px){
+    .container{
+        width:auto;
+        height: auto;
+    }
+    .input-group{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+    }
+    .form{
+        margin: auto;
+        width: auto;  
+    }
+    .input-box{
+        
+    }
+    .genero-input{
+        margin-top: 2rem;
+    }
+    .genero-group{
+        flex-direction: column;      
+    }
+    .genero-input{
+        margin-top: 0.5rem;
+    } 
+
+    .img{
+        height: auto;
+        width: auto;
+    }
+
+    .img img{
+        height: 0px;
+        width: 0px;
+    }
 }
