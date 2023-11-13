@@ -137,7 +137,13 @@ body{
     background-color: #47474736;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1350px){
+    body{
+        background-image: url(../img/logo-cadastro03.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
     .container{
         width:auto;
         height: auto;
@@ -147,31 +153,39 @@ body{
         overflow-y: scroll;
         flex-wrap: nowrap;
         max-height: 10rem;
+        margin: auto;
     }
     .form{
         margin: auto;
-        width: auto;  
+        width: auto; 
+    }
+    .form-header{
+        margin-bottom: 1rem;
     }
     .input-box{
-        
+ 
     }
     .genero-input{
         margin-top: 2rem;
-    }
-    .genero-group{
-        flex-direction: column;      
+        margin: auto;
     }
     .genero-input{
         margin-top: 0.5rem;
     } 
+    .title-genero h6{
+        margin-top: 30px;
+    }
 
     .img{
-        height: auto;
-        width: auto;
+        position: absolute;
+        background: transparent;
     }
 
     .img img{
         height: 0px;
         width: 0px;
+    }
+    .btn-continue{
+        margin: auto;
     }
 }
