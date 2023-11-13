@@ -20,6 +20,7 @@ body{
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to bottom, var(--bg-color01), var(--bg-color02), var(--bg-color3) );
+    overflow: hidden;
 }
 .container{
     width: 80%;
