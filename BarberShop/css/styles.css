@@ -63,7 +63,7 @@ header ul li {
 header ul li a {
   color: white;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family:sans-serif;
   font-style: bold;
 }
 
@@ -159,11 +159,5 @@ header ul li a {
 }
 
 
-/*
-footer*/
+/*footer*/
 
-footer{
-  width: auto;
-  height: 100px;
-  background-color: aqua;
-}
