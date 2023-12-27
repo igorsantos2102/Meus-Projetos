@@ -1,113 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro</title>
 
-    <link rel="stylesheet" href="css/cadastro.css" />
-    <script src="js/cadastro.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+
+  <link rel="icon" href="img/favicon.png"><!--favicon Link-->
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+
+<body>
+
+  <div class="title">
+    <h1>AGENDE SEU HORÁRIO</h1>
+  </div>
+
+  <div class="container">
+    <div class="form-agd">
+
+      <form action="db.html" method="post">
+
+        <!-- nome -->
+        <label for="nome">Nome completo</label><br>
+        <input type="text" id="nome" placeholder="Digite seu nome" maxlength="50" required><br>
+
+        <!-- celular-->
+        <label for="contato">Celular</label><br>
+        <input type="tel" id="contato" placeholder="Digite seu celular" maxlength="11" minlength="10" required><br>
+
+        <!-- data -->
+        <label for="data">Data</label><br>
+        <input type="date" name="data" id="data_cliente" required><br>
+
+        <label for="servicos">Serviços</label><br>
+        <select name="service" id="servicos">
+          <option value="0" hidden>O que deseja ?</option>
+          <option value="corte">Corte</option>
+          <option value="Barba">Barba</option>
+          <option value="Acabamento">Acabamento</option>
+          <option value="Escova">Escova</option>
+          <option value="Camuflagem">Camuflagem</option>
+          <option value="Selagem">Selagem</option>
+          <option value="Relaxamento">Relaxamento</option>
+          <option value="Tintura">Tintura</option>
+          <option value="Platinado">Platinado</option>
+          <option value="Sobrancelha P">Sobrancelha pinça</option>
+          <option value="Sobrancelha N">Sobrancelha navalha</option>
+        </select>
+      </div>
+      <!-- form-agd -->
+      
+      <!-- adicionar form -->
+      <div class="horario">
+        <label for="hr">Horário</label><br>
+        
+        <div class="flex-box-01">
+          <input type="radio" name="hr" id="horario1" value="09" required>
+          <label for="horario1">09:00</label><br><span></span>
+          <input type="radio" name="hr" id="horario2" value="10">
+          <label for="horario2">10:00</label><br><span></span>
+          <input type="radio" name="hr" id="horario3" value="11">
+          <label for="horario3">11:00</label><br><span></span>
+          <input type="radio" name="hr" id="horario4" value="12">
+          <label for="horario4">12:00</label><br>
+        </div>
+        <div class="flex-box-02">
+          <input type="radio" name="hr" id="horario5" value="14">
+          <label for="horario5">14:00</label><br><span></span>
+          <input type="radio" name="hr" id="horario6" value="15">
+          <label for="horario6">15:00</label><br><span></span>
+          <input type="radio" name="hr" id="horario7" value="16">
+          <label for="horario7">16:00</label><br><span></span>
+          <input type="radio" name="hr" id="horario8" value="17">
+          <label for="horario8">17:00</label><br>
+        </div>
+      </div>
+      <input id="btn" type="submit" value="Confirmar">
+    </form>
     
-  </head>
-  <body>
-    <div class="container">
+  </div>
+  <!-- container -->
+</body>
 
-      <!-- imagem cadastro -->
-      <div class="img">
-        <img src="img/logo-cadastro03.png" alt="logo-cadastro" />
-      </div><!--img-->
-
-      <!-- formulario cadastro -->
-      <div class="form">
-
-        <form action="#" method="post" id="signup-form">
-
-          <!-- titulo cadastro -->
-          <div class="form-header">
-            <div class="title">
-              <h1>Cadastre-se</h1>
-            </div>
-          </div><!--form-header-->
-
-          <!-- inputs cadastro -->
-          <div class="input-group">
-
-            <!-- nome -->
-            <div class="input-box">
-              <label for="primeiro-nome">Primeiro nome</label>
-              <input id="primeiro-nome" type="text" name="primeiro-nome" placeholder="Digite seu primeiro nome" required>
-            </div>
-
-            <!-- sobrenome -->
-            <div class="input-box">
-              <label for="sobrenome">Sobrenome</label>
-              <input id="sobrenome" type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
-            </div>
-
-            <!-- email -->
-            <div class="input-box">
-              <label for="email">E-mail</label>
-              <input type="email" id="signup-email" placeholder="Digite seu E-mail" maxlength="50" required>
-            </div>
-
-
-            <!-- celular -->
-            <div class="input-box">
-              <label for="celular">Celular</label>
-              <input id="celular" type="tel" name="sobrenome" maxlength="11" placeholder="(xx) xxxxx-xxxx" required>
-            </div>
-
-
-            <!-- senha -->
-            <div class="input-box">
-              <label for="senha">Senha</label>
-              <input type="password" id="signup-password" placeholder="Digite sua senha" minlength="6" required>
-            </div>
-
-            <!-- confirme senha -->
-            <div class="input-box">
-              <label for="confirm-senha">Confirme a Senha</label>
-              <input type="password" id="signup-confirm-password" placeholder="Confirme sua senha" minlength="6" required>
-            </div>
-
-          </div><!--input-group-->
-
-          <!-- genero -->
-          <div class="genero">
-            <div class="title-genero">
-              <h6>Gênero</h6>
-            </div><!--title-genero-->
-            
-              <div class="genero-group">
-
-                <div class="genero-input">
-                  <input type="radio" name="genero" id="feminino">
-                  <label for="feminino">Feminino</label>
-                </div>
-
-                <div class="genero-input">
-                  <input type="radio" name="genero" id="masculino">
-                  <label for="masculino">Masculino</label>
-                </div>
-
-                <div class="genero-input">
-                  <input type="radio" name="genero" id="outros">
-                  <label for="outros">Outros</label>
-                </div>
-
-
-            </div><!--genero-group-->
-          </div><!--genero-->
-
-          <div class="btn-continue">
-            <button type="button" onclick="cadastrar()">Continuar</button>
-          </div>
-
-        </form>
-
-      </div><!--form-->
-
-
-    </div><!--container-->
-  </body>
 </html>

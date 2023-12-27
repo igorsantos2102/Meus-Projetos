@@ -40,7 +40,7 @@ section.slider {
 
 .nav-manual .manual-btn,
 .nav-auto div {
-  border: 1px solid #FFDE59;
+  border: 1px solid #AF7F1F;
   padding: 5px;
 
   border-radius: 50%;
@@ -54,13 +54,13 @@ section.slider {
 }
 
 .nav-manual .manual-btn:hover {
-  background-color: #FFDE59;
+  background-color: #AF7F1F;
 }
 
 #radio1:checked ~ .nav-auto .auto-btn1,
 #radio2:checked ~ .nav-auto .auto-bt2,
 #radio3:checked ~ .nav-auto .auto-btn3 {
-  background-color: #FFDE59;
+  background-color: #AF7F1F;
 }
 
 #radio1:checked ~ .primeiro {
