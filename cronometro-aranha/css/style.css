@@ -73,14 +73,11 @@ h1{
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .button:hover {
     background-position: right center;
     color: #fff;
     text-decoration: none;
-}
-
-.button:active {
-    transform: scale(0.95);
 }
