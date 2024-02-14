@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --bg-color01: #733c0d;
+    --bg-color02: #592f0b;
+    --bg-color3: #402208;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, var(--bg-color01), var(--bg-color02), var(--bg-color3) );
+}
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0,.212);
+}
+
+.img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    box-shadow:  2px 5px 10px rgba(0, 0, 0, 0.114);
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.form-header{
+    margin-bottom: 3rem;
+}
+
+/* falta algo ?*/
+.input-group{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+
+}
+
+.input-box input{
+    margin: 0.5rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px #0000001c;
+}
+
+.input-box input:hover{
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible{
+    outline: 1px solid black;
+}
+
+.input-box label, 
+.title-genero h6{
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder{
+    color: #000000be;
+}
+
+.genero-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0 .5rem;
+}
+
+.genero-input{
+    display: flex;
+    align-items: center;
+}
+
+.genero-input input{
+    margin-right: 0.35rem;
+}
+
+.genero-input label{
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.btn-continue button{
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0,.300);
+    background-image: linear-gradient( #755a3827 30%, #42392d23 80% )
+}
+
+.btn-continue button:hover{
+    background-color: #47474736;
+}
