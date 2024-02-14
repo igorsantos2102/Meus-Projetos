@@ -6,6 +6,7 @@
   <li><a href="https://igorsantos2102.github.io/projetos/cronometro-aranha/index.html" target="_blank">Cronometro-Aranha</a></li>
   <li><a href="https://igorsantos2102.github.io/projetos/loader-animado/db.html" target="_blank">Loader-Animado</a></li>
   <li><a href="https://igorsantos2102.github.io/projetos/relogio/relogio.html" target="_blank">Relógio</a></li>
-  <li><a href="https://igorsantos2102.github.io/projetos/valentine-days/index.html" target="_blank">I love You</a></li>
+  <li><a href="https://igorsantos2102.github.io/projetos/valentine-days/index.html" target="_blank">valentine-days</a></li>
+  <li><a href="https://igorsantos2102.github.io/projetos/love-you/index.html" target="_blank">I Love You</a></li>
 
  </ul>
