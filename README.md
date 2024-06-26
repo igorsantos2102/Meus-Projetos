@@ -8,5 +8,6 @@
   <li><a href="https://igorsantos2102.github.io/projetos/relogio/relogio.html" target="_blank">Relógio</a></li>
   <li><a href="https://igorsantos2102.github.io/projetos/valentine-days/index.html" target="_blank">Valentine-days</a></li>
   <li><a href="https://igorsantos2102.github.io/projetos/love-you/index.html" target="_blank">I Love You</a></li>
+  <li><a href="https://igorsantos2102.github.io/projetos/jogoDoNumeroSecreto/index.html" target="_blank">Jogo Do Número Secreto</a></li>
 
  </ul>
