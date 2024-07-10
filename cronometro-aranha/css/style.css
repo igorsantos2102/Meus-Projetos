@@ -59,6 +59,10 @@ h1{
     width: 70px;
     height: 70px;
     margin: 10px;
+<<<<<<< HEAD
+=======
+    text-align: center;
+>>>>>>> e9bdfaf99d3678042c53ff74fb377c1bc4fff41b
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
